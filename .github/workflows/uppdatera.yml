@@ -1,0 +1,42 @@
+# Varje natt: läs Burs pastorats kalender och uppdatera docs/data/burs.json.
+# Skriptet: scraper/hamta.mjs (använder Chrome som redan finns på GitHubs körmiljö).
+name: Uppdatera gudstjänster
+
+on:
+  schedule:
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uppdatera
+  cancel-in-progress: false
+
+jobs:
+  hamta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - run: npm ci
+        working-directory: scraper
+      - name: Hämta kalendern
+        working-directory: scraper
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node hamta.mjs
+      - name: Spara om något ändrats
+        run: |
+          # "updated" ändras varje körning – spara bara när själva händelserna ändrats
+          git diff --quiet -I'"updated"' -- docs/data/burs.json && exit 0
+          git add docs/data/burs.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Uppdaterade gudstjänster"
+          git pull --rebase
+          git push

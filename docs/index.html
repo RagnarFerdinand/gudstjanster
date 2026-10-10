@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3b2f5c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Gudstjänster">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Gudstjänster</title>
+<style>
+  :root { --bg:#faf6ee; --ink:#1d1a24; --accent:#3b2f5c; --card:#fff; --line:#d9d2c3; --muted:#4a4558; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17151d; --ink:#f4efe4; --accent:#cdbdf5; --card:#242130; --line:#3b3750; --muted:#c3bdd3; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:22px/1.4 system-ui,-apple-system,sans-serif; }
+  header { background:var(--accent); color:#fff; padding:20px 16px; }
+  @media (prefers-color-scheme: dark) { header { color:#17151d; } }
+  header h1 { margin:0; font-size:1.1rem; font-weight:600; opacity:.85; }
+  header .parish { font-size:1.5rem; font-weight:700; margin-top:2px; }
+  main { max-width:720px; margin:0 auto; padding:16px; }
+  button { font:inherit; min-height:56px; padding:12px 20px; border-radius:14px; border:2px solid var(--accent);
+    background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
+  @media (prefers-color-scheme: dark) { button { color:#17151d; } }
+  button.secondary { background:transparent; color:var(--accent); }
+  input { font:inherit; width:100%; min-height:56px; padding:12px 16px; border-radius:14px; border:2px solid var(--line);
+    background:var(--card); color:var(--ink); }
+  h2 { font-size:1.15rem; margin:28px 0 8px; color:var(--muted); }
+  h2::first-letter { text-transform:uppercase; }
+  .item { background:var(--card); border:2px solid var(--line); border-radius:16px; padding:16px; margin-bottom:12px; }
+  .time { font-size:1.6rem; font-weight:700; color:var(--accent); }
+  .title { font-size:1.3rem; font-weight:600; }
+  .place { color:var(--muted); }
+  .parish-btn { display:block; width:100%; text-align:left; margin-bottom:12px; background:var(--card); color:var(--ink); border-color:var(--line); }
+  .actions { margin-top:20px; display:flex; gap:12px; flex-wrap:wrap; }
+  .msg { padding:24px 0; color:var(--muted); }
+  :focus-visible { outline:4px solid #e0a100; outline-offset:2px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Gudstjänster</h1>
+  <div class="parish" id="parishName"></div>
+</header>
+<main id="main"></main>
+
+<script type="module">
+import { getData } from "./data.js";
+
+const $main = document.getElementById("main");
+document.getElementById("parishName").textContent = "Burs pastorat";
+
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const sameDay = (a, b) => a.toDateString() === b.toDateString();
+
+function dayLabel(d) {
+  const today = new Date();
+  const tomorrow = new Date(); tomorrow.setDate(today.getDate() + 1);
+  const full = d.toLocaleDateString("sv-SE", { weekday: "long", day: "numeric", month: "long" });
+  if (sameDay(d, today)) return "I dag, " + full;
+  if (sameDay(d, tomorrow)) return "I morgon, " + full;
+  return full;
+}
+
+let showAll = false;
+
+async function render() {
+  $main.innerHTML = `<div class="msg">Hämtar gudstjänster…</div>`;
+  let data;
+  try {
+    data = await getData();
+  } catch {
+    $main.innerHTML = `<div class="msg">Det gick inte att hämta gudstjänsterna just nu. Kontrollera internetanslutningen och försök igen.</div>
+      <div class="actions"><button id="retry">Försök igen</button></div>`;
+    document.getElementById("retry").onclick = render;
+    return;
+  }
+  const items = data.events.filter((e) => showAll || e.isService);
+  const groups = new Map();
+  for (const it of items) {
+    const d = new Date(it.start);
+    const key = d.toDateString();
+    if (!groups.has(key)) groups.set(key, { d, items: [] });
+    groups.get(key).items.push({ ...it, d });
+  }
+  let html = "";
+  for (const { d, items } of groups.values()) {
+    html += `<h2>${esc(dayLabel(d))}</h2>`;
+    for (const it of items) {
+      const t = it.d.toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit" }).replace(":", ".");
+      html += `<div class="item"><div class="time">kl. ${t}</div><div class="title">${esc(it.title)}</div><div class="place">${esc(it.place || "")}</div></div>`;
+    }
+  }
+  if (!html) html = `<div class="msg">Inga kommande gudstjänster hittades.</div>`;
+  const upd = new Date(data.updated).toLocaleDateString("sv-SE", { day: "numeric", month: "long" });
+  $main.innerHTML = html + `
+    <div class="actions"><button class="secondary" id="toggle">${showAll ? "Visa bara gudstjänster" : "Visa även andra händelser"}</button></div>
+    <p class="place">Uppdaterad ${esc(upd)}. Källa: Svenska kyrkan.</p>`;
+  document.getElementById("toggle").onclick = () => { showAll = !showAll; render(); };
+}
+
+render();
+</script>
+</body>
+</html>

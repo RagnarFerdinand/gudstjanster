@@ -1,0 +1,466 @@
+{
+ "parish": "Burs pastorat",
+ "updated": "2026-10-10T09:58:24.739Z",
+ "source": "https://www.svenskakyrkan.se/burs",
+ "events": [
+  {
+   "id": "1c06900963f542a0b566e444ab5b6201",
+   "title": "Högmässa",
+   "start": "2026-10-11T11:00:00+02:00",
+   "end": "2026-10-11T12:00:00+02:00",
+   "place": "Närs kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "419a36d846854659af844532b0136ac2",
+   "title": "Gudstjänst",
+   "start": "2026-10-11T18:00:00+02:00",
+   "end": "2026-10-11T19:00:00+02:00",
+   "place": "Burs kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "cfcb9b04f58a435a8a0410bac83be295",
+   "title": "Hållplats Burs",
+   "start": "2026-10-14T14:00:00+02:00",
+   "end": "2026-10-14T16:00:00+02:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "db75e73d10774ba481efc51986cd9447",
+   "title": "Högmässa",
+   "start": "2026-10-18T11:00:00+02:00",
+   "end": "2026-10-18T12:00:00+02:00",
+   "place": "Stånga kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "14d3d52a306f42f88770796d92d73e83",
+   "title": "Gudstjänst",
+   "start": "2026-10-18T18:00:00+02:00",
+   "end": "2026-10-18T19:00:00+02:00",
+   "place": "Lau kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "253eff9cca504286b1240ab5441953e0",
+   "title": "Högmässa",
+   "start": "2026-10-25T11:00:00+01:00",
+   "end": "2026-10-25T12:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "5a1daa9a3eaa41e5a953979120ba996a",
+   "title": "Gudstjänst",
+   "start": "2026-10-25T18:00:00+01:00",
+   "end": "2026-10-25T19:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "0095496035844fe8a3eafaed2070d075",
+   "title": "Hållplats Burs",
+   "start": "2026-10-28T14:00:00+01:00",
+   "end": "2026-10-28T16:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "2050b6727bb14610a29c62e096b1852d",
+   "title": "Högmässa",
+   "start": "2026-10-31T11:00:00+01:00",
+   "end": "2026-10-31T12:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "6723c4d3242548ac85e0cfdfaf9f2bf1",
+   "title": "Minnesgudstjänst",
+   "start": "2026-11-01T15:00:00+01:00",
+   "end": "2026-11-01T16:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "6f3c3c7647f04b11b22a84e64b73eab4",
+   "title": "Minnesgudstjänst",
+   "start": "2026-11-01T18:00:00+01:00",
+   "end": "2026-11-01T19:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "924d03a04d0c4160b4b2b0f9942302fc",
+   "title": "Högmässa",
+   "start": "2026-11-08T11:00:00+01:00",
+   "end": "2026-11-08T12:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "c7f6b6165a7a4137a305f748d0773eb7",
+   "title": "Gudstjänst",
+   "start": "2026-11-08T14:00:00+01:00",
+   "end": "2026-11-08T15:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [],
+   "text": ""
+  },
+  {
+   "id": "7511cc2e7c1b4ed08c66ad35d6e29419",
+   "title": "Hållplats Burs",
+   "start": "2026-11-11T14:00:00+01:00",
+   "end": "2026-11-11T16:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "7508ca7637ab494785c171afdc31d9b1",
+   "title": "Högmässa (sammanlyst)",
+   "start": "2026-11-15T11:00:00+01:00",
+   "end": "2026-11-15T12:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Efter högmässan är det fest i Burs bygdegård då vi firar pastoratets jubilarer. Alla i gudstjänsten är välkomna till festen."
+  },
+  {
+   "id": "2080b09e31a440bd91c000194a06d40e",
+   "title": "Högmässa",
+   "start": "2026-11-22T11:00:00+01:00",
+   "end": "2026-11-22T12:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "493c14de3c3d4169a2799ccebce09edd",
+   "title": "Gudstjänst",
+   "start": "2026-11-22T14:00:00+01:00",
+   "end": "2026-11-22T15:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "237dcbe6632446a4820094443f4de8d2",
+   "title": "Hållplats Burs",
+   "start": "2026-11-25T14:00:00+01:00",
+   "end": "2026-11-25T15:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "24d41f26962c4704860e367f8855cae7",
+   "title": "Högmässa",
+   "start": "2026-11-29T11:00:00+01:00",
+   "end": "2026-11-29T12:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Kören medverkar. Efter högmässan är det adventskaffe."
+  },
+  {
+   "id": "b391b0985e0540b0a11c9f2ffe0e9f76",
+   "title": "Högmässa",
+   "start": "2026-12-06T11:00:00+01:00",
+   "end": "2026-12-06T12:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Efter högmässan är det adventskaffe."
+  },
+  {
+   "id": "53245c82d3a54cf881e6ec727df91189",
+   "title": "Gudstjänst",
+   "start": "2026-12-06T14:00:00+01:00",
+   "end": "2026-12-06T15:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "9c058be68a0e47ac863574171de7f8bc",
+   "title": "Hållplats Burs",
+   "start": "2026-12-09T14:00:00+01:00",
+   "end": "2026-12-09T16:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "590f5a5b634847fd827a5876f01838a5",
+   "title": "Högmässa",
+   "start": "2026-12-13T11:00:00+01:00",
+   "end": "2026-12-13T12:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Efter högmässan är det kyrkkaffe."
+  },
+  {
+   "id": "cdeb3f51af4044a3950bc0e1afd66751",
+   "title": "Högmässa",
+   "start": "2026-12-20T11:00:00+01:00",
+   "end": "2026-12-20T12:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "07e116fc08d942608da953a2e071006f",
+   "title": "Gudstjänst",
+   "start": "2026-12-20T14:00:00+01:00",
+   "end": "2026-12-20T15:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "b5ef84f1b528407fb74ed02315d5b4aa",
+   "title": "Julbön med kimbning",
+   "start": "2026-12-24T15:00:00+01:00",
+   "end": "2026-12-24T16:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "c4e2eb9cda9e4ffdbd755f6529ac392c",
+   "title": "Julnattsgudstjänst",
+   "start": "2026-12-24T22:00:00+01:00",
+   "end": "2026-12-24T23:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "6548354ae2e34030b48fd944b3fb1c02",
+   "title": "Julotta",
+   "start": "2026-12-25T07:00:00+01:00",
+   "end": "2026-12-25T08:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "82e6a12897d74e3fab9cf5b3adc27157",
+   "title": "Vi sjunger julpsalmer",
+   "start": "2026-12-26T18:00:00+01:00",
+   "end": "2026-12-26T19:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Musik och kör"
+   ],
+   "text": "Vi sjunger julens älskade psalmer. Kören medverkar."
+  },
+  {
+   "id": "7d0901029cd84e128cd4d5f6d2f08460",
+   "title": "Högmässa",
+   "start": "2026-12-27T11:00:00+01:00",
+   "end": "2026-12-27T12:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "6554b9a28abb4ce699d9b86a973aab65",
+   "title": "Nyårsbön med kimbning",
+   "start": "2026-12-31T18:00:00+01:00",
+   "end": "2026-12-31T19:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Glögg och pepparkakor efter nyårsbönen. Fyrverkeri på kyrkbacken"
+  },
+  {
+   "id": "5eafd7adb3a24369b65a1494a929f583",
+   "title": "Högmässa",
+   "start": "2027-01-01T14:00:00+01:00",
+   "end": "2027-01-01T15:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "49d7c8708af34af382d380abbf8c7a49",
+   "title": "Högmässa",
+   "start": "2027-01-03T11:00:00+01:00",
+   "end": "2027-01-03T12:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "126023420901463a95796dbc1fb9396c",
+   "title": "Gudstjänst för små och stora",
+   "start": "2027-01-06T11:00:00+01:00",
+   "end": "2027-01-06T12:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": "Kören medverkar. Efter gudstjänsten är det julfest i \"Skolu\" med varmkorv, dans kring granen och tomtebesök."
+  },
+  {
+   "id": "1fc606a6b0354b09b4a0767165e1387a",
+   "title": "Högmässa",
+   "start": "2027-01-10T11:00:00+01:00",
+   "end": "2027-01-10T12:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "141dda7d5a3c4062a2fce5727a22dbf9",
+   "title": "Hållplats Burs",
+   "start": "2027-01-13T14:00:00+01:00",
+   "end": "2027-01-13T16:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "cf6cad642bc24d009eda39c3ad284d33",
+   "title": "Högmässa",
+   "start": "2027-01-17T11:00:00+01:00",
+   "end": "2027-01-17T12:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "5511b9bf7bbc433db343e731c58b9f64",
+   "title": "Gudstjänst",
+   "start": "2027-01-17T14:00:00+01:00",
+   "end": "2027-01-17T15:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "209036bee2744fe5954d58e3a8dea214",
+   "title": "Högmässa",
+   "start": "2027-01-24T11:00:00+01:00",
+   "end": "2027-01-24T12:00:00+01:00",
+   "place": "Lau kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "802922dc7f89445eaca2da4e005fcbb3",
+   "title": "Gudstjänst",
+   "start": "2027-01-24T14:00:00+01:00",
+   "end": "2027-01-24T15:00:00+01:00",
+   "place": "Burs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "753d3d385bc9458ca8a72a1add247985",
+   "title": "Hållplats Burs",
+   "start": "2027-01-27T14:00:00+01:00",
+   "end": "2027-01-27T16:00:00+01:00",
+   "place": "Burs prästgårdskapell",
+   "categories": [
+    "Mötas och umgås"
+   ],
+   "text": ""
+  },
+  {
+   "id": "0f2e024f521c4bd4b06f178194804f5b",
+   "title": "Högmässa",
+   "start": "2027-01-31T11:00:00+01:00",
+   "end": "2027-01-31T12:00:00+01:00",
+   "place": "Stånga kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  },
+  {
+   "id": "dc2bdbc8ce244df3b5137725f6725cfa",
+   "title": "Gudstjänst",
+   "start": "2027-01-31T14:00:00+01:00",
+   "end": "2027-01-31T15:00:00+01:00",
+   "place": "Närs kyrka",
+   "categories": [
+    "Gudstjänst och mässa"
+   ],
+   "text": ""
+  }
+ ]
+}

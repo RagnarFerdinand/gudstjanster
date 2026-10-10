@@ -1,0 +1,9 @@
+{
+  "name": "Gudstjänster",
+  "short_name": "Gudstjänster",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf6ee",
+  "theme_color": "#3b2f5c",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
