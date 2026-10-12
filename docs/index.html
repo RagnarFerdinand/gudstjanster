@@ -36,6 +36,9 @@
   .parish-btn { display:block; width:100%; text-align:left; margin-bottom:12px; background:var(--card); color:var(--ink); border-color:var(--line); }
   .actions { margin-top:20px; display:flex; gap:12px; flex-wrap:wrap; }
   .msg { padding:24px 0; color:var(--muted); }
+  .note { display:block; margin-top:12px; font-size:1rem; color:var(--muted); }
+  .note textarea { display:block; width:100%; margin-top:6px; font:inherit; font-size:1.1rem; padding:10px 12px; border-radius:12px;
+    border:2px solid var(--line); background:var(--bg); color:var(--ink); resize:vertical; }
   :focus-visible { outline:4px solid #e0a100; outline-offset:2px; }
 </style>
 </head>
@@ -66,6 +69,18 @@ function dayLabel(d) {
 
 let showAll = false;
 
+// Anteckningar sparas i den här webbappens egen lagring i telefonen, per gudstjänst.
+const noteKey = (id) => "anteckning:" + id;
+function getNote(id) {
+  try { return localStorage.getItem(noteKey(id)) || ""; } catch { return ""; }
+}
+function setNote(id, text) {
+  try {
+    if (text) localStorage.setItem(noteKey(id), text);
+    else localStorage.removeItem(noteKey(id));
+  } catch {}
+}
+
 async function render() {
   $main.innerHTML = `<div class="msg">Hämtar gudstjänster…</div>`;
   let data;
@@ -90,7 +105,10 @@ async function render() {
     html += `<h2>${esc(dayLabel(d))}</h2>`;
     for (const it of items) {
       const t = it.d.toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit" }).replace(":", ".");
-      html += `<div class="item"><div class="time">kl. ${t}</div><div class="title">${esc(it.title)}</div><div class="place">${esc(it.place || "")}</div></div>`;
+      html += `<div class="item"><div class="time">kl. ${t}</div><div class="title">${esc(it.title)}</div><div class="place">${esc(it.place || "")}</div>
+        <label class="note">Anteckning
+          <textarea data-id="${esc(it.id)}" rows="2" placeholder="Skriv här…">${esc(getNote(it.id))}</textarea>
+        </label></div>`;
     }
   }
   if (!html) html = `<div class="msg">Inga kommande gudstjänster hittades.</div>`;
@@ -98,6 +116,8 @@ async function render() {
   $main.innerHTML = html + `
     <div class="actions"><button class="secondary" id="toggle">${showAll ? "Visa bara gudstjänster" : "Visa även andra händelser"}</button></div>
     <p class="place">Uppdaterad ${esc(upd)}. Källa: Svenska kyrkan.</p>`;
+  $main.querySelectorAll("textarea[data-id]").forEach((ta) =>
+    ta.addEventListener("input", () => setNote(ta.dataset.id, ta.value.trim())));
   document.getElementById("toggle").onclick = () => { showAll = !showAll; render(); };
 }
 
