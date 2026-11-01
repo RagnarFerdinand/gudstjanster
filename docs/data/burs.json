@@ -1,19 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-10-29T10:12:23.984Z",
+ "updated": "2026-11-01T10:39:22.672Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "2050b6727bb14610a29c62e096b1852d",
-   "title": "Högmässa",
-   "start": "2026-10-31T11:00:00+01:00",
-   "end": "2026-10-31T12:00:00+01:00",
-   "place": "Lau kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
   {
    "id": "6723c4d3242548ac85e0cfdfaf9f2bf1",
    "title": "Minnesgudstjänst",
