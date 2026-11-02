@@ -1,30 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-11-01T10:39:22.672Z",
+ "updated": "2026-11-02T11:27:09.164Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "6723c4d3242548ac85e0cfdfaf9f2bf1",
-   "title": "Minnesgudstjänst",
-   "start": "2026-11-01T15:00:00+01:00",
-   "end": "2026-11-01T16:00:00+01:00",
-   "place": "Närs kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
-  {
-   "id": "6f3c3c7647f04b11b22a84e64b73eab4",
-   "title": "Minnesgudstjänst",
-   "start": "2026-11-01T18:00:00+01:00",
-   "end": "2026-11-01T19:00:00+01:00",
-   "place": "Burs kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
   {
    "id": "924d03a04d0c4160b4b2b0f9942302fc",
    "title": "Högmässa",
