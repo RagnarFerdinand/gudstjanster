@@ -1,28 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-11-02T11:27:09.164Z",
+ "updated": "2026-11-09T11:50:41.975Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "924d03a04d0c4160b4b2b0f9942302fc",
-   "title": "Högmässa",
-   "start": "2026-11-08T11:00:00+01:00",
-   "end": "2026-11-08T12:00:00+01:00",
-   "place": "Stånga kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
-  {
-   "id": "c7f6b6165a7a4137a305f748d0773eb7",
-   "title": "Gudstjänst",
-   "start": "2026-11-08T14:00:00+01:00",
-   "end": "2026-11-08T15:00:00+01:00",
-   "place": "Närs kyrka",
-   "categories": [],
-   "text": ""
-  },
   {
    "id": "7511cc2e7c1b4ed08c66ad35d6e29419",
    "title": "Hållplats Burs",
