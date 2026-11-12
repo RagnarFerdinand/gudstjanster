@@ -1,19 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-11-09T11:50:41.975Z",
+ "updated": "2026-11-12T11:30:21.783Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "7511cc2e7c1b4ed08c66ad35d6e29419",
-   "title": "Hållplats Burs",
-   "start": "2026-11-11T14:00:00+01:00",
-   "end": "2026-11-11T16:00:00+01:00",
-   "place": "Burs prästgårdskapell",
-   "categories": [
-    "Mötas och umgås"
-   ],
-   "text": ""
-  },
   {
    "id": "7508ca7637ab494785c171afdc31d9b1",
    "title": "Högmässa (sammanlyst)",
