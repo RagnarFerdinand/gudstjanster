@@ -1,19 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-11-12T11:30:21.783Z",
+ "updated": "2026-11-16T11:45:43.511Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "7508ca7637ab494785c171afdc31d9b1",
-   "title": "Högmässa (sammanlyst)",
-   "start": "2026-11-15T11:00:00+01:00",
-   "end": "2026-11-15T12:00:00+01:00",
-   "place": "Burs kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": "Efter högmässan är det fest i Burs bygdegård då vi firar pastoratets jubilarer. Alla i gudstjänsten är välkomna till festen."
-  },
   {
    "id": "2080b09e31a440bd91c000194a06d40e",
    "title": "Högmässa",
