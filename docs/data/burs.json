@@ -1,30 +1,8 @@
 {
  "parish": "Burs pastorat",
- "updated": "2026-11-16T11:45:43.511Z",
+ "updated": "2026-11-23T13:15:56.082Z",
  "source": "https://www.svenskakyrkan.se/burs",
  "events": [
-  {
-   "id": "2080b09e31a440bd91c000194a06d40e",
-   "title": "Högmässa",
-   "start": "2026-11-22T11:00:00+01:00",
-   "end": "2026-11-22T12:00:00+01:00",
-   "place": "Närs kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
-  {
-   "id": "493c14de3c3d4169a2799ccebce09edd",
-   "title": "Gudstjänst",
-   "start": "2026-11-22T14:00:00+01:00",
-   "end": "2026-11-22T15:00:00+01:00",
-   "place": "Stånga kyrka",
-   "categories": [
-    "Gudstjänst och mässa"
-   ],
-   "text": ""
-  },
   {
    "id": "237dcbe6632446a4820094443f4de8d2",
    "title": "Hållplats Burs",
